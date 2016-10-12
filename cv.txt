@@ -1,0 +1,63 @@
+Javier ZAVALA
+
+Embedded Systems Engineer
+
+<h2>Work Experience</h2>
+<h3>Since Nov2014 – Intel, AlphaMOS. Toulouse</h3>
+<p>Embedded SW Engineer. Consulting company: AUSY.</p>
+<h3>Intel:</h3>
+<p>
+    +Development of sw modules related to audio processing<br>
+    (encoding/ decoding of voice and music for Bluetooth communication)<br>
+    +Analysis of existing code provided by ST Microelectronics<br>
+    +Design of abstraction layers for SAI and audio interface I2S<br>
+    +Debugging. Version control. Unitary/ regression / validation testing<br>
+    +Python development for test automation<br>
+    +Target used in this project: STM32X ARM cortex m4<br>
+</p>
+<h3>AlphaMOS: (Current project)</h3>
+<p>
+Data acquisition and processing, usage<br>
+of SDADC, PWM, UART, SPI, Real Time OS.
+</p>
+Mar2014 – Sep2014. Freescale Semiconductor. Toulouse
+
+Internship to complete master program.
+
+Development of a tool to capture and analyze SPI messages. Tool to
+
+help on troubleshooting of PowerSBC Freescale devices. Firmware
+
+development, version control, planning, GUI development
+
+Jun2011-Aug2013. Continental Automotive. Guadalajara,
+
+Mexico.
+
+Embedded SW Engineer.
+
+Instrumentation & Driver HMI Team. Working in Instrument Panel
+
+Clusters as SW Integrator & SW Developer. C programming,
+
+Troubleshooting. V Model SW development / Delivering of production
+
+code. Changes management.
+
+May2010-Nov2010. AIST . Tsukuba. Japan
+
+Technical training – Exchange program at NATIONAL INSTITUTE OF
+
+ADVANCED INDUSTRIAL SCIENCE AND TECHNOLOGY. Technical work on
+
+microcontrollers programming, Microchip – PIC18F4550 / 2550.
+
+Development of a usb device (Generic class) aimed to control stepper
+
+motors using a Microchip usb generic driver.
+
+Aug2009-Jan2010. Industrias SOLA BASIC. Mexico City.
+
+Electronics Engineer. Design and test AC-DC and DC-DC converters
+
+(Flyback, buck, boost)

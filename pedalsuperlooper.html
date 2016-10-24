@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: beige;
+    background-color: crimson;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+			
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Pedal para sooper looper (midi)</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="index.html">[Home]</a></li>
+    <li><a href="micv.html">[CV]</a></li>
+    <li><a href="pedalsuperlooper.html">[Pedal sooper looper]</a></li>
+    <li><a href="modiftres.html">[Modificacion guitarra 3/4]</a></li>
+    <li><a href="modifd12.html">[Modificacion D12 . Sampler]</a></li>
+    <li><a href="miguitarra.html">[Guitarra]</a></li>
+  </ul>
+</nav>
+
+<article>
+  <h1>Pedal SLooper</h1>
+  <p>
+Pedal para ser usado con sooper looper. El objetivo es enviar comandos midi
+al presionar el boton 3pdt footswitch.
+Aunque es un sw de 3 polos 2 tiros, en realiad solo esta conectado usando 2 de sus 9 terminales.
+simplemente como abierto - cerrado, una de esas dos terminales esta unida a GND y la otra a una entrada
+digital del arduino (ver foto),
+Hay que habilitar la entrada como "pull-up" para que de ese modo cuando el sw este abierto,
+el arduino vea "1" o "HIGH" en su entrada.
+
+pedal_sup00.jpg
+<p> <center> <img src="img/pedal_sup00.jpg" alt="pedalsp_00"  style="width:500px;height:375px;"></center></p>
+<p> <center> <img src="img/pedal_sup01.jpg" alt="pedalsp_01"  style="width:500px;height:667px;"></center></p>
+<p> <center> <img src="img/pedal_sup02.jpg" alt="pedalsp_02"  style="width:500px;height:375px;"></center></p>
+<p> <center> <img src="img/pedal_sup03.jpg" alt="pedalsp_03"  style="width:500px;height:375px;"></center></p>
+<p> <center> <img src="img/pedal_sup04.jpg" alt="pedalsp_04"  style="width:500px;height:375px;"></center></p>
+
+</p>
+</article>
+
+<footer>Se dice que vivimos en una sociedad libre porque tenemos un cierto numero de derechos constitucionalmente garantizados. Pero esto no es tan importante como parece. El grado de libertad personal que existe en una sociedad esta mas determinado por la estructura economica y tecnologica de la sociedad que por sus leyes o por su forma de gobierno (...).[Theodore Kaczynski]</footer>
+
+</div>
+
+</body>
+</html>

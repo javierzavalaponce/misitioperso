@@ -50,7 +50,7 @@ article {
 <nav>
   <ul>
     <li><a href="index.html">[Home]</a></li>
-    <li><a href="micv.html">Sobre mi</a></li>
+    <li><a href="micv.html">[Sobre mi]</a></li>
     <li><a href="pedalsuperlooper.html">[Pedal sooper looper]</a></li>
     <li><a href="modiftres.html">[Modificacion guitarra 3/4]</a></li>
     <li><a href="modifd12.html">[Modificacion D12 . Sampler]</a></li>
@@ -63,7 +63,7 @@ article {
   <p>
 Pedal para ser usado con sooper looper. El objetivo es enviar comandos midi
 al presionar el boton 3pdt footswitch.
-Aunque es un sw de 3 polos 2 tiros, en realiad solo esta conectado usando 2 de sus 9 terminales.
+Aunque es un sw de 3 polos 2 tiros, en realidad solo esta conectado usando 2 de sus 9 terminales.
 simplemente como abierto - cerrado, una de esas dos terminales esta unida a GND y la otra a una entrada
 digital del arduino (ver foto),
 Hay que habilitar la entrada como "pull-up" para que de ese modo cuando el sw este abierto,
@@ -79,6 +79,28 @@ pedal_sup00.jpg
 yo estoy usando una interfaz de audio pero seria lo mismo con un cable usb/midi
 </p>
 <p> <center> <img src="img/pedal_sup05.jpg" alt="pedalsp_05"  style="width:800px;height:360px;"></center></p>
+Las ventanas de JACK y sooperlooper durante el test funcionando:
+Sooper looper puede "aprender" el comando midi que sea enviado, de modo
+que aqui por ejemplo a cada cambio de estado del sw, envie el comando
+"record". arbitrariamente elegi
+la secuencia de bytes: 0xc0,0x01
+que es un comando de "Program Change"
+<p>Entonces el arduino hace esto (siguientes 2 lineas a cada cambio de estado del switch) :</p>
+<p>  Serial.write(0xc0);</p>
+<p>  Serial.write(0x01);</p>
+hay un tutotial sobre midi muy bien explicado en la pagina de sparkfun :
+
+<li><a href="https://learn.sparkfun.com/tutorials/midi-tutorial/messages">[Tuto midi]</a></li>
+
+El midi funciona basicamente igual que una UART (serial 232 )
+es por eso que en el arduino basta con inicializar la com serial con: Serial.begin(31250);
+
+<p> <center> <img src="img/pedal_sup06.png" alt="pedalsp_06"  style="width:500px;height:345px;"></center></p>
+
+Aqui mas info sobre el circuito olimex "shield midi"
+<li><a href="https://www.olimex.com/Products/Duino/Shields/SHIELD-MIDI/">[shield midi]</a></li>
+
+
 </p>
 </article>
 
